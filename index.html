@@ -1,0 +1,10 @@
+<h1>Things I Forget</h1>
+<h2>Python Virtual Environments - With PowerShell Helper Script and Desktop Shortcuts</h2>
+<p>Navigate to <pre>envs</pre> folder, Project root, then call the <pre>venv</pre> instruction:</p>
+<pre>python -m venv [name]</pre>
+<p>Navigate to project dir and generate the PowerShell script named <pre>env.ps1</pre>:</p>
+<pre>& [path to env]\Scripts\activate.ps1</pre>
+<p>Create the Atom shortcut and adjust the path:</p>
+<pre>[user path]\AppData\Local\atom\atom.exe "[path to project]"</pre>
+<p>Create the PowerShell shortcut and adjust the path with the script execution command:</p>
+<pre>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command "cd [path to project]; .\env.ps1"</pre>
